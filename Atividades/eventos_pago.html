@@ -1,0 +1,257 @@
+<!doctype html>
+<html class="no-js" lang="zxx">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>Eventos Pagos </title>
+  <link rel="shortcut icon" type="image/x-icon" href="assets/img/favicon.ico">
+
+  <!-- CSS here -->
+  <link rel="stylesheet" href="assets_eventospago/css/bootstrap.min.eventospago.css">
+  <link rel="stylesheet" href="assets_eventospago/css/owl.carousel.min.eventospago.css">
+  <link rel="stylesheet" href="assets_eventospago/css/slicknav.eventospago.css">
+  <link rel="stylesheet" href="assets_eventospago/css/flaticon.eventospago.css">
+  <link rel="stylesheet" href="assets_eventospago/css/animate.min.eventospago.css">
+  <link rel="stylesheet" href="assets_eventospago/css/magnific-popup.eventospago.css">
+  <link rel="stylesheet" href="assets_eventospago/css/fontawesome-all.min.eventospago.css">
+  <link rel="stylesheet" href="assets_eventospago/css/themify-icons.eventospago.css">
+  <link rel="stylesheet" href="assets_eventospago/css/slick.eventospago.css">
+  <link rel="stylesheet" href="assets_eventospago/css/nice-select.eventospago.css">
+  <link rel="stylesheet" href="assets_eventospago/css/style.eventospago.css">
+  <link rel="stylesheet" href="yooo.css">
+
+  <!--CSS footer-->
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400&display=swap" rel="stylesheet">
+
+  <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500&display=swap" rel="stylesheet">
+
+  <link href="https://fonts.googleapis.com/css?family=Source+Serif+Pro:400,600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="./footer_eventospago/bootstrap-footer-07/fonts/icomoon/style.eventospago.css">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="./footer_eventospago/bootstrap-footer-07/css/bootstrap1.min.eventospago.css">
+
+  <!-- Style CSS -->
+  <link rel="stylesheet" href="./footer_eventospago/bootstrap-footer-07/css/style1.eventospago.css">
+</head>
+
+<body onload="getdata()">
+  <!-- Simbolo de Loading da pagina -->
+  <div id="preloader-active">
+    <div class="preloader d-flex align-items-center justify-content-center">
+      <div class="preloader-inner position-relative">
+        <div class="preloader-circle"></div>
+        <div class="preloader-img pere-text">
+          <img src="assets/img/logo/loder.jpg" alt="">
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Preloader Start -->
+  <header>
+    <!-- Header Start -->
+    <div class="header-area header-transparent">
+      <div class="main-header">
+        <div class="header-bottom  header-sticky">
+          <div class="container-fluid">
+            <div class="row align-items-center">
+              <!-- Logo -->
+              <div class="col-xl-2 col-lg-2 col-md-1">
+                <div class="logo">
+                  <a href="../Principal/principal.html"><span> ACTIVITIES4ALL </span></a>
+                </div>
+              </div>
+              <div class="col-xl-10 col-lg-10 col-md-8">
+                <!-- Main-menu -->
+                <div class="main-menu f-right d-none d-lg-block">
+                  <nav>
+                    <ul id="navigation">
+                      <li><a href="../Principal/principal.html">Home</a></li>
+                      <li>
+                        <a href="about.html">Braga</a>
+                        <ul class="dropdown-menu">
+                          <li><a href="../Sobre_Braga/Pagina_Sobre.html" style="height: 5px;">Sobre Braga</a></li>
+                          <li><a href="../Recomendações/recomendações.html" style="height: 5px;">Recomendações</a></li>
+                          <li><a href="../Roteiro/roteiro.html" style="height: 5px;">Roteiro</a></li>
+                        </ul>
+                      </li>
+                      <li><a href=" pagina_inicial_atividades.html">Atividades</a></li>
+                      <li class="login"><a href="../Log-in/Login.html">Sign in or Register</a></li>
+                    </ul>
+                  </nav>
+                </div>
+              </div>
+              <!-- Header End -->
+  </header>
+  <main>
+    <div class="imagem">
+      <img src="https://www.theatrocirco.com/ficheiros/subseccao/subseccao_40.jpg" alt="">
+    </div>
+    <div class="compartilhar">
+      <p> Compartilhar</p>
+      <img src="partilhar.png" alt="" style="width: 30px;">
+      <img src="instagram.png" alt="" style="width: 30px;padding-top: 30px;">
+      <img src="twitter.png" alt="" style="width: 30px;padding-top: 30px;">
+      <img src="facebook.png" alt="" style="width: 30px;padding-top: 30px;">
+    </div>
+    <div class="evento" style="width:1100px;height:400px;">
+      <div class="retangulo">
+        <div class="box" style="top: 250px;left: 800px;width: 240px;">
+          <p class="texto">Preço do Bilhete:</p>
+          <b id="preco" > 10.00 euros </b>
+          <p></p>
+          <a href="../PaginaPagCartaoMulti/pagamento_multibanco.html" class="botao">Comprar bilhetes</a>
+        </div>
+      </div>
+      <h1 style="padding-top: 150px;"> Evento selecionado </h1>
+      <div class="location">
+        <img src="location.png" alt="" style="width: 30px;">
+        <span> Theatro Circo </span>
+      </div>
+      <div class="calendario">
+        <img src="calendario.png" alt="" style="width: 30px;">
+        <span> Início evento - Fim evento </span>
+      </div>
+      <div class="info">
+        <img src="info.png" alt="" style="width: 30px;">
+        <span> Sala de espetáculos de referência e polo central da programação cultural de Braga</span>
+      </div>
+    </div>
+    <div class="Informacao" style="margin-top: 950px;margin-left: 230px;">
+      <h1> Informação do Evento </h1>
+      <div class="container">
+        <div class="item">
+          <img src="duracao.png" alt="">
+          <b>Duração</b>
+          <p> 16 agosto - 4 horas</p>
+        </div>
+        <div class="item">
+          <img src="ocupacao.png" alt="">
+          <b>Ocupação</b>
+          <p>10/200 lugares ocupados</p>
+        </div>
+        <div class="item">
+          <img src="risco.png" alt="">
+          <b>Riscos Associados</b>
+          <p>Este evento não contém possíveis riscos associados</p>
+        </div>
+        <div class="item">
+          <img src="acompanhamento.png" alt="">
+          <b>Acompanhamento</b>
+          <p>Este evento não requer acompanhamento</p>
+        </div>
+      </div>
+    </div>
+    <div class="Descricao">
+      <h1 style="padding-left: 220px;">Descrição</h1>
+      <p style="padding-left: 220px;padding-right: 200px;">
+        A convite do Theatro Circo, foi criada uma nova banda: os Sangue Suor. Sangue Suor são 6 mãos e 3 baterias,
+        constituído por Rui Rodrigues (At Freddy's House, OSSO, Ângela Polícia), Susie Filipe (Moonshiners, SIRICAIA) e
+        Ricardo Martins (Pop Dell'Arte, Jibóia, Filho da Mãe). Tudo começou com a encomenda do tema de aniversário de
+        2021 a Rui Rodrigues, em comemoração dos 106 anos do Theatro Circo, com o título “Sangue & Suor”. Passados pouco
+        mais de 12 meses, a formação deixa cair o “&” e passa a denominar-se Sangue Suor. Além do espetáculo, haverá um
+        disco, numa edição conjunta do Theatro Circo de Braga e da Omnichord Records, fruto de diversas residências
+        artísticas da banda. Um momento raro no panorama musical português, elevando a importância da percussão e de
+        três importantes bateristas na busca de liberdade criativa, novos sons, fúria, desassossego, fusão e
+        experimentação.</p>
+    </div>
+  </main>
+
+  <footer class="footer-48201" style="padding-top: 40px;padding-bottom: 10px;">
+    <div class="row" style="
+        margin-right: 0px;
+        margin-left: 0px;">
+      <div class="col-md-4 pr-md-51" style="padding-left: 100px;text-align: justify;">
+        <a href="#" class="footer-site-logo d-block mb-4"><strong>ACTIVITIES4ALL</strong></a>
+        <p style="color: #ffffff;"> Activities4All é uma plataforma que pretende ser a alternativa certa para os
+          utilizadores que buscam participar em eventos na cidade de Braga.</p>
+      </div>
+      <div class="col-md">
+        <ul class="list-unstyled nav-links" style="padding-left: 120px">
+          <li><a href="#">Sobre nós</a></li>
+          <li><a href="#">Braga</a></li>
+          <li><a href="#">Atividades</a></li>
+          <li><a href="#">Contacto</a></li>
+          <li><a href="#">Ajuda</a></li>
+        </ul>
+      </div>
+      <div class="col-md">
+        <ul class="list-unstyled nav-links" style="padding-left: 150px;">
+          <li><a href="#">Privacy Policy</a></li>
+          <li><a href="#">Terms &amp; Conditions</a></li>
+          <li><a href="#">Partners</a></li>
+        </ul>
+      </div>
+      <div class="col-md text-md-center" style="
+          padding-right: -30;
+          padding-left: 100px;
+          width: 5px;">
+        <ul class="social list-unstyled">
+          <li><a href="#"><span class="icon-instagram"></span></a></li>
+          <li><a href="#"><span class="icon-twitter"></span></a></li>
+          <li><a href="#"><span class="icon-facebook"></span></a></li>
+          <li><a href="#"><span class="icon-pinterest"></span></a></li>
+          <li><a href="#"><span class="icon-dribbble"></span></a></li>
+        </ul>
+        <p class="" style="padding-left: 60px; padding-right: 100px;"><a href="#" class="btn btn-tertiary">Contact
+            Us</a></p>
+      </div>
+    </div>
+
+    <div class="row " style="
+        width: 720px;
+        padding-right: 60px;
+        padding-left: 100px;">
+      <div class="col-12 text-center">
+        <div class="copyright mt-5 pt-5" style="
+            width: 1300px;
+            border-left-width: 20px;">
+          <p style="color:#ffffff;" style="padding-left: 200px;"><small style="
+                margin-left: 30px">&copy; 2023 All Rights Reserved.</small></p>
+        </div>
+      </div>
+    </div>
+    </div>
+
+  </footer>
+  <!-- JS here -->
+  <!-- All JS Custom Plugins Link Here here -->
+  <script src="./assets_eventospago/js/vendor/modernizr-3.5.0.min.eventospago.js"></script>
+
+  <!-- Jquery, Popper, Bootstrap -->
+  <script src="./assets_eventospago/js/vendor/jquery-1.12.4.min.eventospago.js"></script>
+  <script src="./assets_eventospago/js/popper.min.eventospago.js"></script>
+  <script src="./assets_eventospago/js/bootstrap.min.eventospago.js"></script>
+
+  <!-- Jquery Plugins, main Jquery -->
+  <script src="./assets_eventospago/js/plugins.eventospago.js"></script>
+  <script src="./assets_eventospago/js/main.eventospago.js"></script>
+
+  <script src="./footer_eventospago/bootstrap-footer-07/js/jquery-3.3.1.min.eventospago.js"></script>
+  <script src="./footer_eventospago/bootstrap-footer-07/js/popper.min.eventospago.js"></script>
+  <script src="./footer_eventospago/bootstrap-footer-07/js/bootstrap.min.eventospago.js"></script>
+  <script>
+    function savedata() {
+      var form = {
+        firstname: document.getElementById('inputFirstName').value,
+        lastname: document.getElementById('inputLastName').value,
+        localizacao: document.getElementById('inputLocation').value,
+        email: document.getElementById('inputEmailAddress').value,
+        number: document.getElementById('inputPhone').value,
+        password: JSON.parse(localStorage.getItem(sessionStorage.getItem('login'))).password,
+      };
+      localStorage.setItem(form.email.trim(), JSON.stringify(form));
+      alert("As suas alterações foram guardadas");
+    }
+    function getdata() {
+      document.getElementById('preco').value = "23";
+    }
+  </script>
+
+
+</body>
+
+</html>

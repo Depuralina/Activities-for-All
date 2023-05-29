@@ -1,0 +1,88 @@
+.imagem {
+    display: flex;
+    justify-content: center; /* alinhar o conteúdo horizontalmente */
+    align-items: center; /* alinhar o conteúdo verticalmente */
+}
+  
+.imagem img {
+    position: absolute;
+    width: 1100px;
+    height: 550px;
+    left: 240px;
+    top: 100px;
+}
+
+.compartilhar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0px;
+    gap: 13px;
+    position: absolute;
+    width: 115px;
+    height: 303px;
+    left: 96px;
+    top: 183px;
+}
+
+.evento{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    adding: 0px;
+    gap: 16px;
+    position: absolute;
+    width: 570px;
+    height: 146px;
+    left: 234px;
+    top: 552px;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
+    margin: 10px 0;
+    justify-content: space-between;
+}
+
+.item {
+    margin: 0 20px;
+    position: relative;
+}
+
+.item img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+  
+.container > div {
+    flex-basis: 24%;
+}
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    padding: 0;
+    z-index: 1;
+  }
+  
+  .dropdown-menu li {
+    list-style-type: none;
+  }
+  
+  .dropdown-menu li a {
+    display: block;
+    padding: 5px;
+    text-decoration: none;
+    color: #333;
+    font-size: 12px; /* Defina o tamanho da fonte desejado */
+  }
+  
+  li:hover .dropdown-menu {
+    display: block;
+  }

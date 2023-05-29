@@ -1,0 +1,196 @@
+.imagem {
+  
+    
+    display: block;
+    margin: 0 auto;
+    
+}
+
+
+
+.Ajuda {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding-top: 800px;
+
+}
+
+  
+.page-container {
+    display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.pagamento {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        margin-left: 230px;
+
+}
+
+.texto-email {
+    color:#A7E0F3;
+    text-align: center;
+    
+}
+
+.ajuda {
+        font-family: "Sulphur Point",sans-serif;
+        color: #000000;
+        font-size: 16px;
+        line-height: 30px;
+        margin-bottom: 15px;
+        font-weight: normal;
+        display: block;
+        margin-block-start: 1em;
+        margin-block-end: 1em;
+        margin-inline-start: 0px;
+        margin-inline-end: 0px;
+}
+
+
+.enviar-de-novo {
+    
+    width: 174px;
+    height: 10px;
+
+    background-color: white;
+    color: #A7E0F3;
+    border: 10 #A7E0F3;
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: 2px solid #A7E0F3;
+    font-size: 16px;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    text-align: center;
+    align-content: center;
+    display: inline-block;
+    margin: 0 auto;
+    display: flex;
+  justify-content: center;
+  align-items: center;
+  }
+
+  .texto {
+    text-align: center;
+  }
+
+.e-mail {
+    position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+}
+
+.compartilhar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0px;
+    gap: 13px;
+    position: absolute;
+    width: 115px;
+    height: 303px;
+    left: 96px;
+    top: 183px;
+}
+
+.evento{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    adding: 0px;
+    gap: 16px;
+    position: absolute;
+    width: 570px;
+    height: 146px;
+    left: 234px;
+    top: 552px;
+}
+
+.imagemPhone {
+    width: 100%;
+}
+
+img {
+    float: left;
+    margin-right: 20px;
+}
+.container {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
+    margin: 10px 0;
+    justify-content: space-between;
+}
+
+.item {
+    margin: 0 20px;
+    position: relative;
+    transform: translate(-50%, -50%);
+ 
+
+}
+
+.item img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+  
+.container > div {
+    flex-basis: 24%;
+}
+
+.retangulo {
+    position: relative;
+  }
+  
+.box {
+    background-color: #fff;
+    border-radius: 25px;
+    padding: 20px;
+    width: 200px;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+  
+.texto {
+    margin-top: 0;
+}
+  
+.botao {
+    background-color: #A7E0F3;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+    font-size: 16px;
+    padding: 10px 20px;
+    margin-top: 20px;
+}
+
+.col-md {
+    padding-left: 40px;
+}
+
+.item1 {
+    align-items: center;
+}
+
+.btn::before {
+    background: #a7e0f3;
+}

@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+
+  <title>Perfil</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="./perfilcssjavascr/bootstrap.min.login.css">
+  <link rel="stylesheet" href="./perfilcssjavascr/style.login.css">
+  <style type="text/css">
+    .social {
+      list-style-type: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    .social li {
+      display: inline-block;
+      margin-right: 10px;
+    }
+
+    .icon-instagram,
+    .icon-twitter,
+    .icon-facebook,
+    .icon-pinterest,
+    .icon-dribbble {
+      display: inline-block;
+      width: 24px;
+      /* Ajuste o tamanho do ícone conforme necessário */
+      height: 24px;
+      /* Adicione estilos adicionais, como cor ou margem, se necessário */
+    }
+
+    body {
+      margin-top: 20px;
+      background-color: #f2f6fc;
+      color: #69707a;
+    }
+
+    .img-account-profile {
+      height: 10rem;
+    }
+
+    .rounded-circle {
+      border-radius: 50% !important;
+    }
+
+    .card {
+      box-shadow: 0 0.15rem 1.75rem 0 rgb(33 40 50 / 15%);
+    }
+
+    .card .card-header {
+      font-weight: 500;
+    }
+
+    .card-header:first-child {
+      border-radius: 0.35rem 0.35rem 0 0;
+    }
+
+    .card-header {
+      padding: 1rem 1.35rem;
+      margin-bottom: 0;
+      background-color: rgba(33, 40, 50, 0.03);
+      border-bottom: 1px solid rgba(33, 40, 50, 0.125);
+    }
+
+    .form-control,
+    .dataTable-input {
+      display: block;
+      width: 100%;
+      padding: 0.875rem 1.125rem;
+      font-size: 0.875rem;
+      font-weight: 400;
+      line-height: 1;
+      color: #69707a;
+      background-color: #fff;
+      background-clip: padding-box;
+      border: 1px solid #c5ccd6;
+      -webkit-appearance: none;
+      -moz-appearance: none;
+      appearance: none;
+      border-radius: 0.35rem;
+      transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+    }
+
+    .nav-borders .nav-link.active {
+      color: #A7E0F3;
+      border-bottom-color: #A7E0F3;
+    }
+
+    .nav-borders .nav-link {
+      color: #69707a;
+      border-bottom-width: 0.125rem;
+      border-bottom-style: solid;
+      border-bottom-color: transparent;
+      padding-top: 0.5rem;
+      padding-bottom: 0.5rem;
+      padding-left: 0;
+      padding-right: 0;
+      margin-left: 1rem;
+      margin-right: 1rem;
+    }
+
+    .dropdown-menu {
+      display: none;
+      position: absolute;
+      background-color: #f9f9f9;
+      padding: 0;
+      z-index: 1;
+    }
+
+    .dropdown-menu li {
+      list-style-type: none;
+    }
+
+    .dropdown-menu li a {
+      display: block;
+      padding: 5px;
+      text-decoration: none;
+      color: #333;
+      font-size: 12px;
+      /* Defina o tamanho da fonte desejado */
+    }
+
+    li:hover .dropdown-menu {
+      display: block;
+    }
+  </style>
+  <!--CSS footer-->
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400&display=swap" rel="stylesheet">
+
+  <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500&display=swap" rel="stylesheet">
+
+  <link href="https://fonts.googleapis.com/css?family=Source+Serif+Pro:400,600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="./perfilcssjavascr/footer/bootstrap-footer-07/fonts/icomoon/style.css">
+
+</head>
+
+<body style="overflow: visible;margin-top: 120px;" onload="getdata()">
+  <header>
+    <!-- Header Start -->
+    <div class="header-area header-transparent">
+      <div class="main-header">
+        <div class="header-bottom  header-sticky" style="background-color:#A7E0F3;">
+          <div class="container-fluid">
+            <div class="row align-items-center">
+              <!-- Logo -->
+              <div class="col-xl-2 col-lg-2 col-md-1">
+                <div class="logo">
+                  <a href="../Principal/principal.html" style="color: #fff;"><span> ACTIVITIES4ALL </span></a>
+                </div>
+              </div>
+              <div class="col-xl-10 col-lg-10 col-md-8">
+                <!-- Main-menu -->
+                <div class="main-menu f-right d-none d-lg-block">
+                  <nav>
+                    <ul id="navigation">
+                      <li><a href="../Principal/principal.html">Home</a></li>
+                      <li><a href="#">Braga</a>
+                        <ul class="dropdown-menu" style="background-color: #A7E0F3;">
+                          <li><a href="../Sobre_Braga/Pagina_Sobre.html" style="height: 5px;">Sobre Braga</a></li>
+                          <li><a href="../Recomendações/recomendações.html" style="height: 5px;">Recomendações</a></li>
+                          <li><a href="../Roteiro/roteiro.html" style="height: 5px;">Roteiro</a></li>
+                        </ul>
+                      </li>
+                      <li><a href="../Atividades/pagina_inicial_atividades.html">Atividades</a></li>
+                      <li class="login"><a href="../Log-in/Login.html">Sign in or Register</a></li>
+                    </ul>
+                  </nav>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Header End -->
+  </header>
+  <div class="container-xl px-4 mt-4">
+    <nav class="nav nav-borders">
+      <a class="nav-link active ms-0" href="perfil.html" target="__self">Perfil</a>
+      <a class="nav-link" href="reservas.html" target="__self"> Reservas</a>
+      <a class="nav-link" href="editarperfil.html" target="_self">Editar perfil</a>
+    </nav>
+    <hr class="mt-0 mb-4" />
+    <div class="row">
+      <div class="col-xl-4">
+        <div class="card mb-4 mb-xl-0">
+          <div class="card-header">Foto de perfil</div>
+          <div class="card-body text-center">
+            <img class="img-account-profile rounded-circle mb-2" src="http://bootdey.com/img/Content/avatar/avatar1.png"
+              alt="" />
+
+            <div class="small font-italic text-muted mb-4">
+              JPG or PNG no larger than 5 MB
+            </div>
+
+            <label for="perfil-upload" class="btn btn-primary">Upload da foto de perfil</label>
+            <input id="perfil-upload" type="file" style="display: none" onchange="mostrarNomeArquivo(this)" />
+
+            <script>
+              function mostrarNomeArquivo(input) {
+                if (input.files && input.files[0]) {
+                  var nomeArquivo = input.files[0].name;
+                  alert("Foto selecionada: " + nomeArquivo);
+                }
+              }
+            </script>
+          </div>
+        </div>
+      </div>
+      <div class="col-xl-8">
+        <div class="card mb-4">
+          <div class="card-header">Detalhes da Conta</div>
+          <div class="card-body">
+            <form>
+              <div class="row gx-3 mb-3">
+                <div class="col-md-6">
+                  <label class="small mb-1" for="inputFirstName">Primeiro Nome</label>
+                  <input class="form-control" id="inputFirstName" type="text"
+                    placeholder="Insira o seu primeiro nome" />
+                </div>
+
+                <div class="col-md-6">
+                  <label class="small mb-1" for="inputLastName">Último Nome</label>
+                  <input class="form-control" id="inputLastName" type="text" placeholder="Insira o seu último nome" />
+                </div>
+              </div>
+
+              <div class="row gx-3 mb-3">
+                <div class="col-md-6">
+                  <label class="small mb-1" for="inputLocation">Localização</label>
+                  <input class="form-control" id="inputLocation" type="text"
+                    placeholder="Insira a sua zona de residência" />
+                </div>
+              </div>
+
+              <div class="col-md-6" style="padding-left: 0px; ">
+                <label class="small mb-1" for="inputEmailAddress">Email
+                </label>
+                <input class="form-control" id="inputEmailAddress" type="email"
+                  placeholder="Insira o seu email: name@example.com" disabled/>
+              </div>
+
+              <br />
+
+              <div class="row gx-3 mb-3">
+                <div class="col-md-6">
+                  <label class="small mb-1" for="inputPhone">Contacto telefónico</label>
+                  <input class="form-control" id="inputPhone" type="tel"
+                    placeholder="Insira o seu número de telefone " />
+                </div>
+              </div>
+
+              <button class="btn btn-primary" type="button" onclick="savedata()">
+                Guardar alterações
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <footer class="footer-48201"
+    style="padding-top: 40px;padding-bottom: 10px; margin-top: 250px;background-color: #a7e0f3;">
+    <div class="row" style="
+      margin-right: 0px;
+      margin-left: 0px;">
+      <div class="col-md-4 pr-md-51" style="padding-left: 100px;text-align: justify;">
+        <a href="#" class="footer-site-logo d-block mb-4"><strong>ACTIVITIES4ALL</strong></a>
+        <p style="color: #ffffff;"> Activities4All é uma plataforma que pretende ser a alternativa certa para os
+          utilizadores que buscam participar em eventos na cidade de Braga.</p>
+      </div>
+      <div class="col-md">
+        <ul class="list-unstyled nav-links" style="padding-left: 120px">
+          <li><a href="#">Sobre nós</a></li>
+          <li><a href="#">Braga</a></li>
+          <li><a href="#">Atividades</a></li>
+          <li><a href="#">Contacto</a></li>
+          <li><a href="#">Ajuda</a></li>
+        </ul>
+      </div>
+      <div class="col-md">
+        <ul class="list-unstyled nav-links" style="padding-left: 150px;">
+          <li><a href="#">Privacy Policy</a></li>
+          <li><a href="#">Terms &amp; Conditions</a></li>
+          <li><a href="#">Partners</a></li>
+        </ul>
+      </div>
+      <div class="col-md text-md-center" style="
+        padding-right: -30;
+        padding-left: 100px;
+        width: 5px;">
+        <ul class="social list-unstyled">
+          <li><a href="#"><span class="icon-instagram"></span></a></li>
+          <li><a href="#"><span class="icon-twitter"></span></a></li>
+          <li><a href="#"><span class="icon-facebook"></span></a></li>
+          <li><a href="#"><span class="icon-pinterest"></span></a></li>
+          <li><a href="#"><span class="icon-dribbble"></span></a></li>
+        </ul>
+        <p class="" style="padding-left: 60px; padding-right: 100px; padding-top: 10px;"><a href="#"
+            class="btn btn-tertiary" style="right: 20px;">Contact Us</a></p>
+      </div>
+    </div>
+
+    <div class="row " style="
+      width: 720px;
+      padding-right: 60px;
+      padding-left: 100px;">
+      <div class="col-12 text-center">
+        <div class="copyright mt-5 pt-5" style="
+          width: 1300px;
+          border-left-width: 20px;">
+          <p style="color:#ffffff;" style="padding-left: 200px;"><small style="
+              margin-right: 1120px;">&copy; 2023 All Rights Reserved.</small></p>
+        </div>
+      </div>
+    </div>
+    </div>
+
+  </footer>
+  <script src="https://code.jquery.com/jquery-1.10.2.min.login.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.login.js"></script>
+  <script type="text/javascript"></script>
+  <script src="plugins.login.js"></script>
+  <script src="main.login.js"></script>
+  <script src="./perfilcssjavascr/footer/bootstrap-footer-07/js/jquery-3.3.1.min.login.js"></script>
+  <script src="./perfilcssjavascr/footer/bootstrap-footer-07/js/popper.min.login.js"></script>
+  <script src="./perfilcssjavascr/footer/bootstrap-footer-07/js/bootstrap.min.login.js"></script>
+  <script src="https://code.jquery.com/jquery-1.10.2.min.login.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.login.js"></script>
+  <script type="text/javascript"></script>
+  <script src="plugins.login.js"></script>
+  <script src="main.login.js"></script>
+  <script>
+    function savedata() {
+      var form = {
+        firstname: document.getElementById('inputFirstName').value,
+        lastname: document.getElementById('inputLastName').value,
+        localizacao: document.getElementById('inputLocation').value,
+        email: document.getElementById('inputEmailAddress').value,
+        number: document.getElementById('inputPhone').value,
+        password: JSON.parse(localStorage.getItem(sessionStorage.getItem('login'))).password,
+      };
+      localStorage.setItem(form.email.trim(), JSON.stringify(form));
+      alert("As suas alterações foram guardadas");
+    }
+    function getdata() {
+      document.getElementById('inputFirstName').value = JSON.parse(localStorage.getItem(sessionStorage.getItem('login'))).firstname;
+      document.getElementById('inputLastName').value = JSON.parse(localStorage.getItem(sessionStorage.getItem('login'))).lastname;
+      document.getElementById('inputLocation').value = JSON.parse(localStorage.getItem(sessionStorage.getItem('login'))).localizacao;
+      document.getElementById('inputEmailAddress').value = JSON.parse(localStorage.getItem(sessionStorage.getItem('login'))).email;
+      document.getElementById('inputPhone').value = JSON.parse(localStorage.getItem(sessionStorage.getItem('login'))).number;
+    }
+  </script>
+</body>
+
+</html>

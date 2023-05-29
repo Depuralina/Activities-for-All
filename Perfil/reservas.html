@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Reservas</title>
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.login.css" rel="stylesheet">
+<link rel="stylesheet" href="./perfilcssjavascr/bootstrap.min.login.css">
+<link rel="stylesheet" href="./perfilcssjavascr/style.login.css">
+
+<style type="text/css">
+    	body{margin-top:20px;
+background-color:#f2f6fc;
+color:#69707a;
+}
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    padding: 0;
+    z-index: 1;
+  }
+  
+  .dropdown-menu li {
+    list-style-type: none;
+  }
+  
+  .dropdown-menu li a {
+    display: block;
+    padding: 5px;
+    text-decoration: none;
+    color: #333;
+    font-size: 12px; /* Defina o tamanho da fonte desejado */
+  }
+  
+  li:hover .dropdown-menu {
+    display: block;
+  }
+
+.img-account-profile {
+    height: 10rem;
+}
+.rounded-circle {
+    border-radius: 50% !important;
+}
+.card {
+    box-shadow: 0 0.15rem 1.75rem 0 rgb(33 40 50 / 15%);
+}
+.card .card-header {
+    font-weight: 500;
+}
+.card-header:first-child {
+    border-radius: 0.35rem 0.35rem 0 0;
+}
+.card-header {
+    padding: 1rem 1.35rem;
+    margin-bottom: 0;
+    background-color: rgba(33, 40, 50, 0.03);
+    border-bottom: 1px solid rgba(33, 40, 50, 0.125);
+}
+.form-control, .dataTable-input {
+    display: block;
+    width: 100%;
+    padding: 0.875rem 1.125rem;
+    font-size: 0.875rem;
+    font-weight: 400;
+    line-height: 1;
+    color: #69707a;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #c5ccd6;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border-radius: 0.35rem;
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.nav-borders .nav-link.active {
+    color: #A7E0F3;
+    border-bottom-color: #A7E0F3f2;
+}
+.nav-borders .nav-link {
+    color: #69707a;
+    border-bottom-width: 0.125rem;
+    border-bottom-style: solid;
+    border-bottom-color: transparent;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    padding-left: 0;
+    padding-right: 0;
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+.fa-2x {
+    font-size: 2em;
+}
+
+.table-billing-history th, .table-billing-history td {
+    padding-top: 0.75rem;
+    padding-bottom: 0.75rem;
+    padding-left: 1.375rem;
+    padding-right: 1.375rem;
+}
+.table > :not(caption) > * > *, .dataTable-table > :not(caption) > * > * {
+    padding: 0.75rem 0.75rem;
+    background-color: var(--bs-table-bg);
+    border-bottom-width: 1px;
+    box-shadow: inset 0 0 0 9999px var(--bs-table-accent-bg);
+}
+
+.border-start-primary {
+    border-left-color: #0061f2 !important;
+}
+.border-start-secondary {
+    border-left-color: #6900c7 !important;
+}
+.border-start-success {
+    border-left-color: #00ac69 !important;
+}
+.border-start-lg {
+    border-left-width: 0.25rem !important;
+}
+.h-100 {
+    height: 100% !important;
+}
+    </style>
+     <!--CSS footer-->
+     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+     <link href="https://fonts.googleapis.com/css?family=Roboto:300,400&display=swap" rel="stylesheet">
+ 
+     <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500&display=swap" rel="stylesheet">
+ 
+     <link href="https://fonts.googleapis.com/css?family=Source+Serif+Pro:400,600&display=swap" rel="stylesheet">
+ 
+     <link rel="stylesheet" href="./perfilcssjavascr/footer/bootstrap-footer-07/fonts/icomoon/style.css">
+ 
+     <!-- Bootstrap CSS -->
+     <link rel="stylesheet" href="./perfilcssjavascr/footer/bootstrap-footer-07/css/bootstrap1.min.css">
+     
+     <!-- Style CSS -->
+     <link rel="stylesheet" href="./perfilcssjavascr/footer/bootstrap-footer-07/css/style1.css">
+</head>
+<body style="overflow: visible;margin-top: 120px;">
+    <header>
+		<!-- Header Start -->
+		<div class="header-area header-transparent">
+			<div class="main-header">
+				<div class="header-bottom  header-sticky" style="background-color:#A7E0F3;">
+					<div class="container-fluid">
+						<div class="row align-items-center">
+							<!-- Logo -->
+							<div class="col-xl-2 col-lg-2 col-md-1">
+								<div class="logo">
+									<a href="../Principal/principal.html" style="color: #fff;"><span> ACTIVITIES4ALL </span></a>
+								</div>
+							</div>
+							<div class="col-xl-10 col-lg-10 col-md-8">
+								<!-- Main-menu -->
+								<div class="main-menu f-right d-none d-lg-block">
+                  <nav>
+										<ul id="navigation">                                                                                                                                     
+											<li><a href="../Principal/principal.html">Home</a></li>
+											<li><a href="#">Braga</a>
+												<ul class="dropdown-menu" style="background-color: #A7E0F3;">
+													<li><a href="../Sobre_Braga/Pagina_Sobre.html" style="height: 5px;">Sobre Braga</a></li>
+													<li><a href="../Recomendações/recomendações.html" style="height: 5px;">Recomendações</a></li>
+													<li><a href="../Roteiro/roteiro.html" style="height: 5px;">Roteiro</a></li>
+												</ul>
+											</li>
+											<li><a href="../Atividades/pagina_inicial_atividades.html">Atividades</a></li>
+											<li class="login"><a href="../Log-in/Login.html">Sign in or Register</a></li>
+										</ul>
+									</nav>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			<!-- Header End -->
+			</header>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css" integrity="sha256-2XFplPlrFClt0bIdPgpz8H7ojnk10H69xRqd9+uTShA=" crossorigin="anonymous" />
+<div class="container-xl px-4 mt-4">
+    <nav class="nav nav-borders" style="padding-top: 20px; margin-right: 90px;">
+      <a class="nav-link ms-0" href="perfil.html" target="_self" >Perfil</a>
+      <a class="nav-link active" href="reservas.html" target="_self" >Reservas</a>
+      <a class="nav-link ms-0" href="editarperfil.html" target="_self" >Editar Perfil</a>
+    </nav>
+    <hr class="mt-0 mb-4" >
+</div>
+
+<div class="card mb-4" style="margin-top: 40px;width: 1301.6px;margin-left: 100px;">
+<div class="card-header">Histórico de Reservas</div>
+<div class="card-body p-0">
+
+<div class="table-responsive table-billing-history">
+<table class="table mb-0">
+<thead>
+<tr>
+<th class="border-gray-200" scope="col">Id da Atividade</th>
+<th class="border-gray-200" scope="col">Data</th>
+<th class="border-gray-200" scope="col">Montante</th>
+<th class="border-gray-200" scope="col">Estado do Pagamento</th>
+<th class="border-gray-200" scope="col">Nome da Atividade</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>#1</td>
+<td>06/15/2023</td>
+<td>29.99€</td>
+<td><span class="badge bg-light text-dark">Pendente</span></td>
+<td></td>
+</tr>
+<tr>
+<td>#2</td>
+<td>05/15/2023</td>
+<td>29.99€</td>
+<td><span class="badge bg-success">Pago</span></td>
+<td></td>
+</tr>
+<tr>
+<td>#3</td>
+<td>04/15/2023</td>
+<td>29.99€</td>
+<td><span class="badge bg-success">Pago</span></td>
+<td></td>
+</tr>
+<tr>
+<td>#4</td>
+<td>03/15/2023</td>
+<td>29.99€</td>
+<td><span class="badge bg-success">Pago</span></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</div>
+<footer class="footer-48201" style="padding-top: 40px;padding-bottom: 10px; margin-top: 250px;background-color: #a7e0f3;">
+    <div class="row" style="
+    margin-right: 0px;
+    margin-left: 0px;">
+<div class="col-md-4 pr-md-51" style="padding-left: 100px;text-align: justify;">
+  <a href="#" class="footer-site-logo d-block mb-4"><strong>ACTIVITIES4ALL</strong></a>
+  <p style ="color: #ffffff;"> Activities4All é uma plataforma que pretende ser a alternativa certa para os utilizadores que buscam participar em eventos na cidade de Braga.</p>
+</div>
+      <div class="col-md">
+        <ul class="list-unstyled nav-links" style="padding-left: 120px">
+          <li><a href="#">Sobre nós</a></li>
+          <li><a href="#">Braga</a></li>
+          <li><a href="#">Atividades</a></li>
+          <li><a href="#">Contacto</a></li>
+          <li><a href="#">Ajuda</a></li>
+        </ul>
+      </div>
+      <div class="col-md">
+        <ul class="list-unstyled nav-links" style="padding-left: 150px;">
+          <li><a href="#">Privacy Policy</a></li>
+          <li><a href="#">Terms &amp; Conditions</a></li>
+          <li><a href="#">Partners</a></li>
+        </ul>
+      </div>
+      <div class="col-md text-md-center" style="
+      padding-right: -30;
+      padding-left: 100px;
+      width: 5px;">
+        <ul class="social list-unstyled">
+          <li><a href="#"><span class="icon-instagram"></span></a></li>
+          <li><a href="#"><span class="icon-twitter"></span></a></li>
+          <li><a href="#"><span class="icon-facebook"></span></a></li>
+          <li><a href="#"><span class="icon-pinterest"></span></a></li>
+          <li><a href="#"><span class="icon-dribbble"></span></a></li>
+        </ul>
+        <p class="" style="padding-left: 60px; padding-right: 100px;"><a href="#" class="btn btn-tertiary">Contact Us</a></p>
+      </div>
+    </div> 
+
+    <div class="row "  style="
+    width: 720px;
+    padding-right: 60px;
+    padding-left: 100px;">
+      <div class="col-12 text-center">
+        <div class="copyright mt-5 pt-5" style="
+        width: 1300px;
+        border-left-width: 20px;">
+          <p style="color:#ffffff; margin-bottom: 20px;"><small>&copy; 2023 All Rights Reserved.</small></p>
+        </div>
+      </div>
+    </div> 
+  </div>
+  
+</footer>
+<script src="https://code.jquery.com/jquery-1.10.2.min.login.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.login.js"></script>
+<script type="text/javascript">
+	
+</script>
+<script src="plugins.js"></script>
+<script src="main.js"></script>
+<script src="./footer/bootstrap-footer-07/js/jquery-3.3.1.min.login.js"></script>
+<script src="./footer/bootstrap-footer-07/js/popper.min.login.js"></script>
+<script src="./footer/bootstrap-footer-07/js/bootstrap.min.login.js"></script>
+</body>
+</html>

@@ -1,0 +1,31 @@
+.rownova{
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    overflow: hidden;
+}
+
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    padding: 0;
+    z-index: 1;
+  }
+
+  .dropdown-menu li {
+    list-style-type: none;
+  }
+
+  .dropdown-menu li a {
+    display: block;
+    padding: 5px;
+    text-decoration: none;
+    color: #333;
+    font-size: 12px; /* Defina o tamanho da fonte desejado */
+  }
+
+  li:hover .dropdown-menu {
+    display: block;
+  }
